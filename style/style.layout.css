@@ -18,10 +18,11 @@
 body{
     background-color: var(--graySecondary) !important;
 }
-/* ----- Navigation Section ----- */
+/* ----- Admin Navigation Section ----- */
 .navbar-containter{
     padding-bottom: 10px;
     border-bottom: 2px solid var(--blackColor);
+    position: relative;
 }
 .navbar-containter img{
     width: 50px;
@@ -71,9 +72,162 @@ body{
     color: var(--fontgray);
     border-radius: 50%;
 }
+.nav-avatar button i:hover{
+    color: var(--borderColorCard);
+}
+
 #userNameID{
     display:block;
 }
+/* --- PFP Admin Modal --- */
+.pfpadmin-close .pfpadmin-modal{
+    display: block;
+}
+.pfpadmin-modal{
+    display: none;
+    position: absolute;
+    background-color: var(--grayPrimary);
+    width: 250px;
+    right: 30px;
+    top: 60px;
+}
+.pfpadmin-body {
+    border: 1px solid var(--blackColor);
+}
+.pfpadmin-body .pfpadmin-imgBody{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    overflow: hidden;
+    object-fit: cover;
+    object-position: center;
+}
+.pfpadmin-content{
+    padding: 10px;
+}
+.pfpadmin-content button{
+    width: 100%;
+    text-align: left;
+    border: none;
+    margin-bottom: 5px;
+    background-color: transparent;
+    color: var(--blackColor);
+    font-weight: 600;
+    padding: 5px 0;
+    padding-left: 5px;
+}
+.pfpadmin-content button:hover{
+    background-color: var(--borderColorCard);
+    border-radius: 5px;
+}
+.pfpadmin-content button i{
+    font-size: 1.2rem;
+    width: 30px;
+    text-align: center;
+}
+/* ----- User navivation Section -----  */
+.navbarUser-containter{
+    margin-top: -9px;
+    padding: 10px 0 !important;
+    background: var(--blackColor);
+    position: relative;
+}
+.navbarUser-containter img{
+    width: 50px;
+}
+.navbarUser-href a{
+    text-decoration: none;
+    margin-right: 10px;
+    color: var(--fontwhite);
+    font-weight: 500;
+    font-size: 1.3rem;
+}
+.navbarUser-href a:hover{
+    color: var(--borderColor);
+}
+.navbarUser-avatar button{
+    border: none;
+    background-color: transparent;
+}
+.navbarUser-avatar i{
+    padding: 3px 6px;
+    font-size: 1.5rem;
+    color: var(--fontgray);
+    border-radius: 50%;
+}
+.navbarUser-avatar i:hover{
+   color: var(--borderColorCard);
+}
+.navbarUser-icon{
+    display: none !important;
+    font-size: 2rem;
+}
+.navbarUser-span{
+    display: inline !important;
+}
+.userNav-Active{
+    color: var(--redBtn) !important;
+}
+/* --- PFP User Modal --- */
+.pfp-close .pfp-modal{
+    display: block;
+}
+.pfp-modal{
+    display: none;
+    position: absolute;
+    background-color: var(--grayPrimary);
+    width: 250px;
+    right: 25px;
+    top: 50px;
+    z-index: 1010;
+}
+.pfp-body {
+    border: 1px solid var(--blackColor);
+}
+.pfp-body .pfp-header{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid var(--blackColor);
+    font-weight: 600;
+}
+.pfp-body .pfp-imgBody{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    overflow: hidden;
+    object-fit: cover;
+    object-position: center;
+}
+.pfp-imgBody img{
+    width: 30px;
+}
+.pfp-content{
+    padding: 10px;
+}
+.pfp-content button{
+    width: 100%;
+    text-align: left;
+    border: none;
+    margin-bottom: 5px;
+    background-color: transparent;
+    color: var(--blackColor);
+    font-weight: 600;
+    padding: 5px 0;
+    padding-left: 5px;
+}
+.pfp-content button:hover{
+    background-color: var(--borderColorCard);
+    border-radius: 5px;
+}
+.pfp-content button i{
+    font-size: 1.2rem;
+    width: 30px;
+    text-align: center;
+}
+
 /* ----- Sidebar Section -----  */
 .sidebar-container{
     padding-top: 20px;
@@ -100,40 +254,72 @@ body{
 }
 /* Extra Small devices (landscape phones, 576px and up) */
 @media (max-width: 576px) {
+    /* Admin side  */
     #userNameID{
         display:none;
     }
     #brandTitle{
         display:none;
+    }
+    /* User side  */
+    .navbarUser-containter{
+        padding: 8px 15px !important;
+    }
+    .navbarUser-icon{
+        display: inline !important;
+    }
+    .navbarUser-span{
+        display: none !important;
     }
 }
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) {
+    /* Admin side  */
     #userNameID{
         display:none;
     }
     #brandTitle{
         display:none;
+    }
+    /* User side  */
+    .navbarUser-containter{
+        padding: 8px 15px !important;
     }
 }
 
  /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
+    /* Admin side  */
     #userNameID{
         display:none;
     }
     #brandTitle{
         display:block;
     }
+    /* User side  */
+    .navbarUser-icon{
+        display: none !important;
+    }
+    .navbarUser-span{
+        display: inline !important;
+    }
 }
 
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
+    /* Admin side  */
     #userNameID{
         display:block;
     }
     #brandTitle{
         display:block;
+    }
+    /* User side  */
+    .navbarUser-icon{
+        display: none !important;
+    }
+    .navbarUser-span{
+        display: inline !important;
     }
 }
 

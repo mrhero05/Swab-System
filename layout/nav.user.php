@@ -12,31 +12,33 @@
     <title>Document</title>
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg ">
-        <div class="container-fluid navbar-containter px-lg-4">
+   
+    <!-- ---- Navigation ---- -->
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid navbarUser-containter px-lg-4">
             <!-- ---- Account Profile Modal ---- -->
-            <div class="pfpadmin-close pfpadmin-modal">
-                <div class="pfpadmin-body">
-                    <div class="pfpadmin-content">
+            <div class="pfp-close pfp-modal">
+                <div class="pfp-body">
+                    <div class="pfp-header">
+                        <div class="pfp-imgBody">
+                            <img src="../image/default-user.png" alt="">
+                        </div>
+                        <span>Sample Name</span>
+                    </div>
+                    <div class="pfp-content">
                         <button><i class="fas fa-user"></i> View Profile</button>
                         <button><i class="fas fa-sign-out-alt"></i> Logout account</button>
                     </div>
                 </div>
             </div>
 
-            <img class="navbar-brand" src="../image/swablogo.png" alt="">
-            <div class="navbar-nav me-auto mt-2">
-                <h4 id="brandTitle">Swab System</h4>
-            </div>
-            <div class="d-flex align-items-center nav-avatar">
-                <i class="fas fa-bell nav-notif" ><span>0</span></i>
-                <div class="nav-avatar-container">
-                    <div class="nav-avatar-image">
-                        <img src="../image/default-user.png" alt="">
-                    </div>
-                    <span id="userNameID">Sample User</span>
+            <a href="userSide.php"><img class="navbarUser-brand" src="../image/swablogo.png" alt=""></a>
+                <div class="navbarUser-href">
+                    <a href="userAppointment.php" class="userNav-ahref" id="hrefUserAppoint"><i class="far fa-calendar-check navbarUser-icon"></i> <span class="navbarUser-span">Request an appointment</span></a>
+                    <a href="userResult.php" class="userNav-ahref" id="hrefUserResult"><i class="fas fa-poll navbarUser-icon"></i> <span class="navbarUser-span">Covid Test Results</span></a>
                 </div>
-                <button onfocusin="pfpAdminModalShow()" onfocusout="pfpAdminModalHide()"><i class="fas fa-caret-down"></i></button>
+            <div class="navbarUser-avatar">
+                <button onfocusin="pfpModalShow()" onfocusout="pfpModalHide()"><i class="fas fa-caret-down"></i></button>
             </div>
             </div>
         </div>
@@ -44,31 +46,27 @@
     <!-- Boostraps Scripts -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
-    
+
+    <!-- Sweet Alert Script -->
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <!-- Scroll animation Script -->
+
     <!-- Script href Active -->
     <script type="text/javascript" >
-        $(document).ready( ()=>{
-            $(".nav li").each(function() {
-                document.querySelector(".sideNav-ahref").classList.remove("sideNav-Active");
-            });
-            if (location.href.match(/adminDashboard.php/)){
-                document.querySelector("#hrefDash").classList.add("sideNav-Active");
-            }
-            else if (location.href.match(/adminScheduling.php/)){
-                document.querySelector("#hrefSched").classList.add("sideNav-Active");
-            }
-            else if (location.href.match(/adminAppointment.php/)){
-                document.querySelector("#hrefAppoint").classList.add("sideNav-Active");
-            }
-            else if (location.href.match(/adminResults.php/)){
-                document.querySelector("#hrefResults").classList.add("sideNav-Active");
-            }
-        })
+    $(document).ready( ()=>{
+        $(".nav a").each(function() {
+            document.querySelector(".userNav-ahref").classList.remove("userNav-Active");
+        });
+        if (location.href.match(/userAppointment.php/)){
+            document.querySelector("#hrefUserAppoint").classList.add("userNav-Active");
+        }
+        else if (location.href.match(/userResult.php/)){
+            document.querySelector("#hrefUserResult").classList.add("userNav-Active");
+            console.log('asdf');
+        }
+    })
     </script> 
 
-     <!-- Sweet Alert Script -->
-    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
-    <!-- Sroll animation Script -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>AOS.init();</script>
     <!-- PFP show script  -->
