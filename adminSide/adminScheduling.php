@@ -13,12 +13,12 @@
         <div class="row">
             <?php  include '../layout/sidebar.admin.php'; ?>
             <div class="col-lg-10 p-4">
-               <div class="schedulingContainer">
-                   <h1>Scheduling</h1>
-                   <div class="sched-calender">
-                       
-                   </div>
-               </div>
+                <div class="schedulingContainer">
+                    <h1>Scheduling</h1>
+                    <div class="sched-calender">
+                        
+                    </div>
+                </div>
             </div>
         </div>
     </div>

@@ -15,7 +15,7 @@
                 <img src="../image/undraw_doctor_kw-5-l.svg" alt="">
             </div>
             <div class="col-sm-12 col-md-12 col-lg-12 col-xl-5 userRightSide m-auto">
-                <div class="userRightSide-content">
+                <div class="userRightSide-content" data-aos="fade-left" data-aos-duration="1500">
                     <div class="container-fluid p-0">
                         <div class="row">
                             <div class="col-lg-12">
