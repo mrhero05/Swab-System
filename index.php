@@ -39,18 +39,36 @@
                         <h2>Welcome Back!</h2>
                         <p>Login your account to continue.</p>
                     </div>
+                    <div class="login-message">
+                        <p id="log-messageId"></p>
+                    </div>
                     <div class="login-input">
-                        <input type="asd" id="asd" placeholder="Email address">
-                        <input type="qwer"  id="qwer" placeholder="Password">
+                        <input type="text" id="log-username" placeholder="Email address">
+                        <input type="password"  id="log-password" placeholder="Password">
                     </div>
                     <div class="login-actions m-auto">
                         <a href="indexSide/registerAccount.php">Create an account.</a>
                         <a href="" class="login-forgotpass"> • Forgot password?</a>
-                        <button>Sign in</button>
+                        <button onclick="checkUserCredentials()">Sign in</button>
                     </div>
+                    <div style="display:none;" id="userSignInDIV"></div>
                 </div>
             </div>
         </div>
     </div>
+    <script type="text/javascript" src="functions/indexFunction.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </body>
 </html>
+<?php
+    session_start();
+    if(isset($_SESSION['userAccountType'])){
+        if($_SESSION['userAccountType'] == 'user'){
+            header('Location: userSide/userSide.php');
+        }
+        if($_SESSION['userAccountType'] == 'administrator'){
+            header('Location: adminSide/adminDashboard.php');
+        }
+    }
+?>

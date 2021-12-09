@@ -1,3 +1,15 @@
+<?php
+    session_start();
+    if(isset($_SESSION['userAccountType'])){
+        if($_SESSION['userAccountType'] == 'user'){
+            header('Location: ../userSide/userSide.php');
+        }
+    }
+    if(empty($_SESSION['userAccountType'])){
+        header('Location: ../index.php');
+    }
+
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -19,7 +31,8 @@
                 <div class="pfpadmin-body">
                     <div class="pfpadmin-content">
                         <button><i class="fas fa-user"></i> View Profile</button>
-                        <button><i class="fas fa-sign-out-alt"></i> Logout account</button>
+                        <button onclick="adminLogout()"><i class="fas fa-sign-out-alt"></i> Logout account</button>
+                        <div style="display:none" id="adminLogoutDIV"></div>
                     </div>
                 </div>
             </div>
@@ -34,9 +47,9 @@
                     <div class="nav-avatar-image">
                         <img src="../image/default-user.png" alt="">
                     </div>
-                    <span id="userNameID">Sample User</span>
+                    <span id="userNameID" ><?php if(isset($_SESSION['userAccountName'])){echo $_SESSION['userAccountName'];}else{echo 'n/a';}?></span>
                 </div>
-                <button onfocusin="pfpAdminModalShow()" onfocusout="pfpAdminModalHide()"><i class="fas fa-caret-down"></i></button>
+                <button onclick="pfpAdminModalShow()" ><i class="fas fa-caret-down"></i></button>
             </div>
             </div>
         </div>
@@ -73,5 +86,7 @@
     <script>AOS.init();</script>
     <!-- PFP show script  -->
     <script type="text/javascript" src="../style/style.js"></script>
+    <!-- admin Function  -->
+    <script type="text/javascript" src="../functions/adminFunction.js"></script>
 </body>
 </html>

@@ -1,12 +1,18 @@
+let pfpModalBool = true;
 function pfpModalShow(){ // show pfp modal userside
-    document.body.classList.add('pfp-close');
+    if(pfpModalBool != false){
+        document.body.classList.add('pfp-close');
+    }else{
+        document.body.classList.remove('pfp-close');
+    }
+    pfpModalBool = !pfpModalBool;
 }
-function pfpModalHide(){ // hide pfp modal userside
-    document.body.classList.remove('pfp-close');
-}
+let pfpAdminModalBool = true;
 function pfpAdminModalShow(){ // show pfp modal adminside
-    document.body.classList.add('pfpadmin-close');
-}
-function pfpAdminModalHide(){ // hide pfp modal adminside
-    document.body.classList.remove('pfpadmin-close');
+    if(pfpAdminModalBool != false){
+        document.body.classList.add('pfpadmin-close');
+    }else{
+        document.body.classList.remove('pfpadmin-close');
+    }
+    pfpAdminModalBool = !pfpAdminModalBool;
 }
