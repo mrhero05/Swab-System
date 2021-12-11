@@ -1,3 +1,14 @@
+<?php
+    session_start();
+    if(isset($_SESSION['userAccountType'])){
+        if($_SESSION['userAccountType'] == 'administrator'){
+            header('Location: ../adminSide/adminDashboard.php');
+        }
+    }
+    if(empty($_SESSION['userAccountType'])){
+        header('Location: ../index.php');
+    }
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -23,11 +34,12 @@
                         <div class="pfp-imgBody">
                             <img src="../image/default-user.png" alt="">
                         </div>
-                        <span>Sample Name</span>
+                        <span><?php if(isset($_SESSION['userAccountName'])){echo $_SESSION['userAccountName'];}else{echo 'n/a';}?></span>
                     </div>
                     <div class="pfp-content">
                         <button><i class="fas fa-user"></i> View Profile</button>
-                        <button><i class="fas fa-sign-out-alt"></i> Logout account</button>
+                        <button onclick="userLogout()"><i class="fas fa-sign-out-alt"></i> Logout account</button>
+                        <div style="display:none" id="userLogoutDIV"></div>
                     </div>
                 </div>
             </div>
@@ -38,7 +50,7 @@
                     <a href="userResult.php" class="userNav-ahref" id="hrefUserResult"><i class="fas fa-poll navbarUser-icon"></i> <span class="navbarUser-span">Covid Test Results</span></a>
                 </div>
             <div class="navbarUser-avatar">
-                <button onfocusin="pfpModalShow()" onfocusout="pfpModalHide()"><i class="fas fa-caret-down"></i></button>
+                <button onclick="pfpModalShow()"><i class="fas fa-caret-down"></i></button>
             </div>
             </div>
         </div>
@@ -66,10 +78,12 @@
         }
     })
     </script> 
-
+    <!-- Sroll animation Script -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>AOS.init();</script>
     <!-- PFP show script  -->
     <script type="text/javascript" src="../style/style.js"></script>
+    <!-- user Function  -->
+    <script type="text/javascript" src="../functions/userFunction.js"></script>
 </body>
 </html>

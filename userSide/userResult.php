@@ -10,7 +10,7 @@
 <body>
     <?php include '../layout/nav.user.php';?>
     <div class="container">
-        <div class="result-body m-auto mt-sm-1 mt-md-5 mt-lg-5">
+        <div class="result-body m-auto mt-sm-1 mt-md-5 mt-lg-5" data-aos="fade-up" data-aos-duration="500">
             <div class="result-header">
                 <div>
                     <h3>Laboratory Report</h3>
