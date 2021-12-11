@@ -1,5 +1,5 @@
 <?php
-    require '../db_connection.php';
+    require 'db_connection.php';
     session_start();
     if(isset($_POST['indexPostAction'])){
         $indexPostAction = $_POST['indexPostAction'];
