@@ -21,10 +21,14 @@
         if (mysqli_num_rows($sqlLogin) > 0){
             $_SESSION['userAccountType'] = $rowLogin['useri_acctype'];
             $_SESSION['userAccountName'] = $rowLogin['useri_fname'];
+            $_SESSION['userAccountLastName'] = $rowLogin['useri_lname'];
+            $_SESSION['userAccountID'] = $rowLogin['useri_id'];
             echo $rowLogin['useri_acctype'];
         }else{
             empty($_SESSION['userAccountType']);
             empty($_SESSION['userAccountName']);
+            empty($_SESSION['userAccountLastName']);
+            empty($_SESSION['userAccountID']);
             echo 'wrongCredentials';
         }
     }
