@@ -24,41 +24,42 @@
                             </div>
                             <div class="col-md-6 col-lg-6">
                                 <label>First Name
-                                    <input type="email" class="userform-control" value="asdf">
+                                    <input type="text" class="userform-control" value="<?php echo $_SESSION['userAccountName'];?>" disabled>
                                 </label>
                             </div>
                             <div class="col-md-6 col-lg-6">
                                 <label>Last Name
-                                    <input type="email" class="userform-control">
+                                    <input type="text" class="userform-control" value="<?php echo $_SESSION['userAccountLastName'];?>" disabled>
                                 </label>
                             </div>
                             <div class="col-md-6 col-lg-6">
                                 <label>Appointment Date
-                                    <input type="date" class="userform-control">
+                                    <input type="date" name="userApt-date" id="userApt-date" class="userform-control">
                                 </label>
                             </div>
                             <div class="col-md-6 col-lg-6">
                                 <label>Preferred time</label>
-                                <select name="" id="" class="userform-control">
-                                    <option value="">9:00AM</option>
-                                    <option value="">9:30AM</option>
-                                    <option value="">10:00AM</option>
-                                    <option value="">10:30AM</option>
-                                    <option value="">11:00AM</option>
-                                    <option value="">11:30AM</option>
-                                    <option value="">12:00PM</option>
-                                    <option value="">12:30PM</option>
+                                <select name="userApt-time" id="userApt-time" class="userform-control">
+                                    <option value="9:00 AM">9:00 AM</option>
+                                    <option value="9:30 AM">9:30 AM</option>
+                                    <option value="10:00 AM">10:00 AM</option>
+                                    <option value="10:30 AM">10:30 AM</option>
+                                    <option value="11:00 AM">11:00 AM</option>
+                                    <option value="11:30 AM">11:30 AM</option>
+                                    <option value="12:00 PM">12:00 PM</option>
+                                    <option value="12:30 PM">12:30 PM</option>
                                 </select>
                             </div>
                             <div class="col-lg-12">
                                 <label>Your message</label>
-                                <textarea class="userform-control" name="" id="" rows="6"></textarea>
+                                <textarea class="userform-control" name="userApt-message" id="userApt-message" rows="6"></textarea>
                             </div>
                             <div class="col-lg-12">
                                 <p>If the appointment date and time are full, would you agree to reschedule your appointment. If needed?</p>
-                                <label><input type="radio" name="asdfasfd" id="asdfasfd" value="Yes">Yes</label>
-                                <label><input type="radio" name="asdfasfd" id="asdfasfd" value="No">No</label>
-                                <button>Submit</button>
+                                <label><input type="radio" name="userApt-boolean" id="userApt-boolean" value="Yes">Yes</label>
+                                <label><input type="radio" name="userApt-boolean" id="userApt-boolean" value="No">No</label>
+                                <button onclick="createSchedule()">Submit</button>
+                                <div id="createSchedDIV" style="display:none;"></div>
                             </div>
                         </div>
                     </div>

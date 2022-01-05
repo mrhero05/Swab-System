@@ -140,7 +140,6 @@
     color: var(--fontgray);
     margin-top: 10px;
 }
-
 /* Extra Small devices (landscape phones, 576px and up) */
 @media (max-width: 376px) {
     /* Result Section  */

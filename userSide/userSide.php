@@ -23,7 +23,7 @@
                                 <div class="card-body">
                                     <h5 class="card-title">Latest COVID news today</h5>
                                     <p class="card-text">Read the latest updates about COVID-19</p>
-                                    <a href="#" class="btn btn-primary">Learn more</a>
+                                    <a href="https://www.google.com/search?q=Latest+COVID+news+today&rlz=1C1SQJL_enPH863PH863&oq=Latest+COVID+news+today&aqs=chrome..69i57.576j0j1&sourceid=chrome&ie=UTF-8" target="_blank" class="btn btn-primary">Learn more</a>
                                 </div>
                             </div>
                         </div>
@@ -33,7 +33,7 @@
                                 <div class="card-body">
                                     <h5 class="card-title">Symptoms of COVID-19</h5>
                                     <p class="card-text">Read the latest updates about COVID-19</p>
-                                    <a href="#" class="btn btn-primary">Learn more</a>
+                                    <a href="https://www.google.com/search?q=Symptoms+of+COVID-19&rlz=1C1SQJL_enPH863PH863&ei=hjDVYZefC4Lc2roPhcqS6AY&ved=0ahUKEwiX-q2d9Jn1AhUCrlYBHQWlBG0Q4dUDCA4&uact=5&oq=Symptoms+of+COVID-19&gs_lcp=Cgdnd3Mtd2l6EAMyCggAELEDEIMBEEMyBQgAEIAEMgUIABCABDIKCAAQsQMQgwEQQzIFCAAQgAQyBQgAEIAEMgUIABCABDIFCAAQgAQyBQgAEIAEMgUIABCABEoECEEYAEoECEYYAFAAWABgpgNoAHACeACAAVyIAVySAQExmAEAoAECoAEBwAEB&sclient=gws-wiz" target="_blank"  class="btn btn-primary">Learn more</a>
                                 </div>
                             </div>
                         </div>
@@ -43,7 +43,7 @@
                                 <div class="card-body">
                                     <h5 class="card-title">Ways to prevent COVID-19</h5>
                                     <p class="card-text">Read the latest updates about COVID-19</p>
-                                    <a href="#" class="btn btn-primary">Learn more</a>
+                                    <a href="https://www.google.com/search?q=Ways+to+prevent+COVID-19&rlz=1C1SQJL_enPH863PH863&ei=JzHVYZvaIdje2roPlv-aiAY&ved=0ahUKEwjbiafq9Jn1AhVYr1YBHZa_BmEQ4dUDCA4&uact=5&oq=Ways+to+prevent+COVID-19&gs_lcp=Cgdnd3Mtd2l6EAMyBQgAEIAEMgUIABCABDIFCAAQgAQyBQgAEIAEMgYIABAWEB4yBggAEBYQHjIGCAAQFhAeMgYIABAWEB4yBggAEBYQHjIGCAAQFhAeSgQIQRgASgQIRhgAUABYAGCDBGgAcAJ4AIABVYgBVZIBATGYAQCgAQKgAQHAAQE&sclient=gws-wiz" target="_blank" class="btn btn-primary">Learn more</a>
                                 </div>
                             </div>
                         </div>
@@ -53,7 +53,7 @@
                                 <div class="card-body">
                                     <h5 class="card-title">Ways to improve your immune system</h5>
                                     <p class="card-text">Read the latest updates about COVID-19</p>
-                                    <a href="#" class="btn btn-primary">Learn more</a>
+                                    <a href="https://www.google.com/search?q=Ways+to+improve+your+immune+system&rlz=1C1SQJL_enPH863PH863&oq=Ways+to+improve+your+immune+system&aqs=chrome..69i57.157j0j1&sourceid=chrome&ie=UTF-8" target="_blank" class="btn btn-primary">Learn more</a>
                                 </div>
                             </div>
                         </div>
@@ -63,7 +63,7 @@
                                 <div class="card-body">
                                     <h5 class="card-title">Map of cases</h5>
                                     <p class="card-text">Read the latest updates about COVID-19</p>
-                                    <a href="#" class="btn btn-primary">Learn more</a>
+                                    <a href="https://www.google.com/search?q=map+of+cases+of+covid&rlz=1C1SQJL_enPH863PH863&ei=UTHVYY-kCI6O2roPmses0Ak&oq=Map+of+cases+of+&gs_lcp=Cgdnd3Mtd2l6EAMYADIFCAAQgAQyBQgAEIAEMgUIABCABDIICAAQgAQQyQMyBQgAEIAEMgYIABAWEB4yBggAEBYQHjIGCAAQFhAeMgYIABAWEB4yBggAEBYQHjoHCAAQRxCwAzoKCAAQRxCwAxDJAzoHCAAQsAMQQzoKCAAQ6gIQtAIQQzoOCAAQjwEQ6gIQjAMQ5QI6DgguEI8BEOoCEIwDEOUCOgIIJjoFCAAQkQI6CAgAEMkDEJECSgQIQRgASgQIRhgAUO0BWIs8YP5IaAVwAngAgAFWiAHnA5IBATaYAQCgAQGgAQKwAQrIAQnAAQE&sclient=gws-wiz" target="_blank" class="btn btn-primary">Learn more</a>
                                 </div>
                             </div>
                         </div>
@@ -73,7 +73,7 @@
                                 <div class="card-body">
                                     <h5 class="card-title">Statistics of COVID-19</h5>
                                     <p class="card-text">Read the latest updates about COVID-19</p>
-                                    <a href="#" class="btn btn-primary">Learn more</a>
+                                    <a href="https://www.google.com/search?q=Statistics+of+COVID-19&rlz=1C1SQJL_enPH863PH863&oq=Statistics+of+COVID-19&aqs=chrome..69i57.302j0j1&sourceid=chrome&ie=UTF-8" target="_blank" class="btn btn-primary">Learn more</a>
                                 </div>
                             </div>
                         </div>
