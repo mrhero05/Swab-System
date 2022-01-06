@@ -8,3 +8,31 @@ function adminLogout(){
         window.location.href='../index.php';
     })
 }
+function displayAppointment(){
+    $('#displayAppointmentID').load(adminAjaxLocation,{
+        adminPostAction: 'appointmentDisplay'
+    });
+}
+function reschedFunction(idValue){
+    $('#reschedDIV').load(adminAjaxLocation,{
+        adminPostAction: 'reschedAppointment',
+        idValue:idValue
+    },function (response,status,xhr){
+        displayAppointment();
+    });
+}
+function approvedFunction(idValue){
+    $('#approvedDIV').load(adminAjaxLocation,{
+        adminPostAction: 'approvedAppointment',
+        idValue:idValue
+    },function (response,status,xhr){
+        displayAppointment();
+    });
+}
+function loadResultBody(){
+    $('#tableResultBody').load(adminAjaxLocation,{
+        adminPostAction: 'tableResultLoad'
+    },function (response,status,xhr){
+       
+    });
+}
