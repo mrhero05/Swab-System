@@ -147,11 +147,8 @@
                                 </div>
                             </div>
                         </div>
-                        <div id="reschedDIV" style="display:none;"></div>
-                        <div id="approvedDIV" style="display:none;"></div>
-                        <div>
-                            <!-- burahin mo nalang to -->
-                        </div>
+                        <!-- <div id="reschedDIV" style="display:none;"></div> -->
+                        <!-- <div id="approvedDIV" style="display:none;"></div> -->
                    </div>
                </div>
             </div>
