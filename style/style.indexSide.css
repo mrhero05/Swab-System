@@ -1,0 +1,205 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+*{
+    font-family: 'Roboto', sans-serif;
+}
+:root{
+    --grayPrimary: #F9F9F9;
+    --graySecondary: #EFEFEF;
+    --blackColor: #343434;
+    --redBtn:#FD5757;
+    --greenBtn:#60E394;
+    --yellowStatus:#F6CD43;
+    --blueStatus:#53B3E5;
+    --borderColorCard:#CCCCCC;
+    --borderColor:#7F7F7F;
+    --fontwhite:#ffffff;
+    --fontgray:#606060;
+}
+/* --- Register ---  */
+.reg-container{
+    margin: 5% 22%;
+    padding: 60px 90px;
+    border-radius: 10px;
+    border:2px solid var(--borderColor)
+}
+.reg-container h3{
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+}
+.reg-header{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+.reg-header img{
+    width: 60px;
+}
+.reg-input .form-register{
+    margin: 5px 0;
+    font-size: 1.1rem;
+    padding: 10px;
+    border-radius: 5px;
+    font-weight: 500;
+    outline: 1px solid var(--borderColorCard);
+    border: none;
+    color: var(--blackColor);
+    width: 100%;
+}
+.reg-input label{
+    font-size: 1.1rem;
+    color: var(--blackColor);
+    font-weight: 700;
+}
+.reg-buttons{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px !important;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.reg-input button{
+    border: none;
+    background-color: var(--redBtn);
+    padding: 10px 60px;
+    border-radius: 5px;
+    color: var(--fontwhite);
+    font-weight: 400;
+    font-size: 1.2rem;
+}
+.reg-input a{
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: var(--blackColor);
+    font-weight: 500;
+}
+/* --- Complete Profile ---  */
+.comProfile-container{
+    margin: 5% 26%;
+    margin-top: 10px;
+}
+.comProf-header{
+    text-align: center;
+    color: var(--redBtn);
+}
+.comProf-inputBody{
+    margin-top: 20px;
+    padding: 3rem 5rem;
+    border: 2px solid var(--borderColorCard);
+    border-radius: 5px;
+}
+.comProf-inputBody label{
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+.comProf-inputBody input{
+    width: 100%;
+}
+.comProf-inputBody button{
+    margin-top: 15px;
+    border: none;
+    padding: 10px;
+    color: var(--fontwhite);
+    background: var(--redBtn);
+    width: 100%;
+    border-radius: 5px;
+}
+
+/* Extra Small devices (landscape phones, 576px and up) */
+@media (max-width: 576px) {
+    /* --- Register ---  */
+    .reg-container{
+        margin: 10% 10%;
+        padding: 20px 20px;
+        border-radius: 10px;
+        border:2px solid var(--borderColor)
+    }
+    .reg-container h3{
+        font-size: 1.1rem;
+    }
+    .reg-buttons{
+        justify-content: center;
+    }
+    .reg-input .form-register{
+        margin: 5px 0;
+        font-size: 1rem;
+    }
+    .reg-input label{
+        font-size: .9rem;
+        font-weight: 700;
+    }
+    /* --- Complete Profile ---  */
+    .comProfile-container{
+        margin: 2% 2%;
+        margin-top: 10px;
+    }
+    .comProf-inputBody{
+        padding: 1rem 2rem;
+    }
+}
+/*  Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+     /* --- Register ---  */
+    .reg-container{
+        margin: 5% 0;
+        padding: 40px 70px;
+        border-radius: 10px;
+        border:2px solid var(--borderColor)
+    }
+    .reg-buttons{
+        justify-content: space-between;
+    }
+    .reg-container h3{
+        font-size: 1.5rem;
+    }
+    .reg-input .form-register{
+        margin: 5px 0;
+        font-size: 1.1rem;
+    }
+    .reg-input label{
+        font-size: 1.1rem;
+        font-weight: 700;
+    }
+    /* --- Complete Profile ---  */
+    .comProfile-container{
+        margin: 5% 5%;
+        margin-top: 10px;
+    }
+    .comProf-inputBody{
+        padding: 2rem 4rem;
+    }
+}
+/*  Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+     /* --- Register ---  */
+    .reg-container{
+        margin: 5% 10%;
+        padding: 50px 80px;
+        border-radius: 10px;
+        border:2px solid var(--borderColor)
+    }
+    /* --- Complete Profile ---  */
+    .comProfile-container{
+        margin: 5% 15%;
+        margin-top: 10px;
+    }
+}
+
+/*  Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+     /* --- Register ---  */
+    .reg-container{
+        margin: 5% 22%;
+        padding: 60px 90px;
+        border-radius: 10px;
+        border:2px solid var(--borderColor)
+    }
+    /* --- Complete Profile ---  */
+    .comProfile-container{
+        margin: 5% 26%;
+        margin-top: 10px;
+    }
+    .comProf-inputBody{
+        padding: 3rem 5rem;
+    }
+}
