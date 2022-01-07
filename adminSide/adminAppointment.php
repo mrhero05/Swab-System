@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="../style/style.admin.css">
     <title>Appointment</title>
 </head>
-<body onload="displayAppointment()">
+<body>
     <?php include '../layout/nav.admin.php';?>
     <div class="container-fluid">
         <div class="row">
@@ -25,7 +25,7 @@
                                 </select>
                             </span>
                         </div>
-                        <div class="appoint-cards-body" id="displayAppointmentID">
+                        <div class="appoint-cards-body">
                             <div class="appoint-cards" data-aos="zoom-in-up">
                                 <div class="appoint-cardsTop">
                                     <span>9:30AM</span>
@@ -147,11 +147,13 @@
                                 </div>
                             </div>
                         </div>
+
                         <div id="reschedDIV" style="display:none;"></div>
                         <div id="approvedDIV" style="display:none;"></div>
                         <div>
                             <!-- burahin mo nalang to -->
                         </div>
+
                    </div>
                </div>
             </div>

@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="../style/style.admin.css">
     <title>Results</title>
 </head>
-<body onload="loadResultBody()">
+<body>
     <?php include '../layout/nav.admin.php';?>
     <div class="container-fluid">
         <div class="row">
@@ -34,7 +34,7 @@
                                     <th>Status</th>
                                     <th>Action</th>
                                 </thead>
-                                <tbody id="tableResultBody">
+                                <tbody>
                                     <tr>
                                         <td>2DC213</td>
                                         <td>Sample Name</td>
