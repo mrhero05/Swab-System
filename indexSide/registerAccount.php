@@ -18,34 +18,34 @@
             </div>
             <h3>Let's create your account.</h3>
             <div class="reg-input">
-                <form class="row g-2">
+                <form class="row g-2" action="registerFunction.php" method="POST">
                     <div class="col-md-6">
                         <label for="reg-fname">First name</label>
-                        <input type="text" class="form-register" id="reg-fname" placeholder="Enter your first name">
+                        <input type="text" class="form-register" id="reg-fname" placeholder="Enter your first name" name="fname">
                     </div>
                     <div class="col-md-6">
                         <label for="reg-lname">Last name</label>
-                        <input type="text" class="form-register" id="reg-lname" placeholder="Enter your last name">
+                        <input type="text" class="form-register" id="reg-lname" placeholder="Enter your last name" name="lname">
                     </div>
                     <div class="col-12">
                         <label for="reg-email">Email address</label>
-                        <input type="email" class="form-register" id="reg-email" placeholder="Enter your email address">
+                        <input type="email" class="form-register" id="reg-email" placeholder="Enter your email address" name="email">
                     </div>
                     <div class="col-12">
                         <label for="reg-phonenum">Phone Number</label>
-                        <input type="text" class="form-register" id="reg-phonenum" placeholder="Enter your phone number">
+                        <input type="text" class="form-register" id="reg-phonenum" placeholder="Enter your phone number" name="phone">
                     </div>
                     <div class="col-12">
                         <label for="reg-password">Password</label>
-                        <input type="text" class="form-register" id="reg-password" placeholder="Enter your password">
+                        <input type="text" class="form-register" id="reg-password" placeholder="Enter your password" name="pass1">
                     </div>
                     <div class="col-12">
                         <label for="reg-cpassword">Confirm Password</label>
-                        <input type="text" class="form-register" id="reg-cpassword" placeholder="Confirm your password">
+                        <input type="text" class="form-register" id="reg-cpassword" placeholder="Confirm your password" name="pass2">
                     </div>
                     <div class="col-12 reg-buttons">
                         <a href="../index.php">Login instead</a>
-                        <button  class="">Register</button>
+                        <button type="submit" class="">Register</button>
                     </div>
                 </form>
             </div>
