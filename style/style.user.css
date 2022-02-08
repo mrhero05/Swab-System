@@ -126,7 +126,7 @@
 }
 .result-report span{
     padding: 5px 35px;
-    background-color: #C5F5D8;
+    /* background-color: #C5F5D8; */
     color: var(--greenBtn);
     font-size: 1.5rem;
     font-weight: 600;

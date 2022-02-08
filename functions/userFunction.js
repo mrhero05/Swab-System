@@ -31,3 +31,15 @@ function createSchedule(){
         }
     })
 }
+function generateReport(){ // generate reproyh
+    window.location.href = '../functions/genReport.php';
+}
+function loadResultData(){ // load result data
+    $('#resultInfo').load(userAjaxLocation,{
+        userPostAction: 'loadResultinfo'
+    });
+    $('#userTestResultID').load(userAjaxLocation,{
+        userPostAction: 'userTestResult'
+    });
+    
+}
