@@ -33,11 +33,13 @@ function showdate(click_id){
                   $(document).ready(function(){
                     var parent = $(click_id).closest("tr");
                     var id = parent.find('.user_id').val();
-                    //alert(id);
-                   
+                    var rid = parent.find('.r_id').val();
+                    //alert(rid);
                     $('#reschedDate').load('../functions/reschedfunction.php',{
                         id:id,
-                        date1:start1
+                        date1:start1,
+                        rid:rid
+
                     });
                     location.reload();
                     });

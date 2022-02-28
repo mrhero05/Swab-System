@@ -36,3 +36,21 @@ function loadResultBody(){
        
     });
 }
+
+function presult(value1){
+    $('#bid').load(adminAjaxLocation,{
+        adminPostAction: 'presult',
+        id:value1
+    },function (response,status,xhr){
+       
+    });
+}
+function nresult(value1){
+    $('#bid').load(adminAjaxLocation,{
+        adminPostAction: 'nresult',
+        id:value1
+    },function (response,status,xhr){
+       console.log(response);
+    });
+}
+

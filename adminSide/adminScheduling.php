@@ -46,7 +46,8 @@
                                                     echo '
                                                     <div id="reschedDate"></div>
                                                     <tr>
-                                                    <input type="hidden" class="user_id" value='.$row["resched_id"].'>
+                                                    <input type="hidden" class="user_id" value='.$row["useri_id"].'>
+                                                    <input type="hidden" class="r_id" value='.$row["resched_id"].'>
                                                     <td>'.$row["resched_id"].'</td>
                                                     <td>'.$row["useri_fname"].'</td>
                                                     <td>'.$row["useri_lname"].'</td>
