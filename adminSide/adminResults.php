@@ -45,6 +45,7 @@
                                             <button>Negative</button>
                                         </td>
                                     </tr>
+                                    <div id="useriResultDIV" style="display:none;"></div>
                                 </tbody>
                             </table>
                         </div>

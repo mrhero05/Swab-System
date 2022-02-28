@@ -37,20 +37,20 @@ function loadResultBody(){
     });
 }
 
-function presult(value1){
-    $('#bid').load(adminAjaxLocation,{
+function presultbtn(value1){
+    $('#useriResultDIV').load(adminAjaxLocation,{
         adminPostAction: 'presult',
-        id:value1
+        usid:value1
     },function (response,status,xhr){
-       
+        
     });
 }
-function nresult(value1){
-    $('#bid').load(adminAjaxLocation,{
+function nresultbtn(value2){
+    $('#useriResultDIV').load(adminAjaxLocation,{
         adminPostAction: 'nresult',
-        id:value1
+        usid:value2
     },function (response,status,xhr){
-       console.log(response);
+       
     });
 }
 
