@@ -20,6 +20,12 @@
             case 'tableResultLoad':
                 tableResultLoadFunction($connection);
                 break;
+            case 'presult':
+                presultFunction($connection);
+                break;
+            case 'nresult':
+                nresultFunction($connection);
+                break;
                 
         }
     }
@@ -89,14 +95,29 @@
                     <td>'.$eachSelect['apt_id'].'</td>
                     <td>'.$eachSelect['useri_fname'].'</td>
                     <td>'.$eachSelect['useri_lname'].'</td>
+                    <div id="bid"></div>
                     <td>Pending</td>
                     <td>
-                        <button>Positive</button>
-                        <button>Negative</button>
+                        
+                        <button onclick="presult(this.value)" value="'.$eachSelect['useri_id'].'">Positive</button>
+                        <button onclick="nresult(this.value)" value="'.$eachSelect['useri_id'].'">Negative</button>
                     </td>
                 </tr>
                      ';
                 endforeach; 
         }
     }
+
+    function presultFunction($connection){
+        $id = $_POST["id"];
+        $sql ="UPDATE tbl_userinfo set useri_result='Positive' where useri_id ='$id'";
+        mysqli_query($connection,$sql);
+    }
+    function nresultFunction($connection){
+        echo "123";
+        $id = $_POST["id"];
+        $sql ="UPDATE tbl_userinfo set useri_result='Negative' where useri_id ='$id'";
+        mysqli_query($connection,$sql);
+    }
+
 ?>
