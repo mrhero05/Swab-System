@@ -10,7 +10,7 @@ The **Swab System** is a web-based application developed during the COVID-19 pan
 
 
 ## Demo
-[View Demo Click Here]([https://github.com](http://swabsystem.ct.ws/))
+[View Demo Click Here](http://swabsystem.ct.ws/)
 
 ## Features
 
